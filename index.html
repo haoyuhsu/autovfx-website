@@ -73,6 +73,20 @@
         autoplay: 10000,
         hoverpause: true
       }).mount();
+      new Glide("#dynamic-carousel-baselines", {
+        type: "carousel",
+        perView: 1.00,
+        focusAt: "center",
+        autoplay: 10000,
+        hoverpause: true
+      }).mount();
+      new Glide("#dynamic-carousel-chatsim", {
+        type: "carousel",
+        perView: 1.00,
+        focusAt: "center",
+        autoplay: 10000,
+        hoverpause: true
+      }).mount();
       new Glide("#dynamic-carousel-pikaffect", {
         type: "carousel",
         perView: 1.00,
@@ -146,7 +160,7 @@
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 text-center">
         <span class="link-block">
-          <a href="https://drive.google.com/file/d/1voPSflyWZlN5knX33g7rRjpaT2xJPR8c/view?usp=sharing" class="external-link button is-normal is-rounded is-dark">
+          <a href="src/3dv25_autovfx.pdf" class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
               <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas"
                 data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
@@ -580,6 +594,108 @@
         <h4>
           Baselines
         </h4>
+        <div class="text-justify">
+          We compare our method with three baseline methods, including 
+          <a href="https://instruct-nerf2nerf.github.io/">Instruct2Nerf</a>, 
+          <a href="https://silent-chen.github.io/DGE/">DGE</a>, and 
+          <a href="https://www.mmlab-ntu.com/project/fresco/">FRESCO</a>.
+        </div>
+        <td align="center" valign="top">
+          <div class="glide" id="dynamic-carousel-baselines">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/000_Add a cupcake on the metal plate..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Add a cupcake on the metal plate.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/005_Replace the bulldozer with a birthday cake at the same position..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Replace the bulldozer with a birthday cake at the same position.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/006_Simulate books falling from the sofa..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Simulate books falling from the sofa.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/007_Setup a camp fire in the middle of the floor..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Setup a camp fire in the middle of the floor.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/001_Make the vase with flowers to be like a mirror..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Make the vase with flowers to be like a mirror.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/002_Insert an animated Goku figurine on the ground and make it on fire..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Insert an animated Goku figurine on the ground and make it on fire.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/003_Insert an animated pikachu on the table..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Insert an animated pikachu on the table.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <video controls muted loop autoplay>
+                    <source src="src/videos/baselines/004_Drop 5 basketballs on the table..mp4" type="video/mp4" />
+                  </video>
+                  <div class="slide-text">
+                    <h4>Drop 5 basketballs on the table.</h4>
+                  </div>
+                  <br />
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <span class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                  src="resources/arrow-left-circle-fill.svg" /></span>
+              <span class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                  src="resources/arrow-right-circle-fill.svg" /></span>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <span class="glide__bullet" data-glide-dir="=0"></span>
+              <span class="glide__bullet" data-glide-dir="=1"></span>
+              <span class="glide__bullet" data-glide-dir="=2"></span>
+              <span class="glide__bullet" data-glide-dir="=3"></span>
+              <span class="glide__bullet" data-glide-dir="=4"></span>
+              <span class="glide__bullet" data-glide-dir="=5"></span>
+              <span class="glide__bullet" data-glide-dir="=6"></span>
+              <span class="glide__bullet" data-glide-dir="=7"></span>
+            </div>
+          </div>
+        </td>
       </div>
     </div>
 
@@ -588,6 +704,104 @@
         <h4>
           ChatSim
         </h4>
+        <div class="text-justify">
+          We compare our method (right) with <a href="https://yifanlu0227.github.io/ChatSim/">ChatSim</a> (middle) for autonomous driving scene simulation. 
+          The original input image is shown on the left.
+        </div>
+        <td align="center" valign="top">
+          <div class="glide" id="dynamic-carousel-chatsim">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <table width="100%">
+                    <tr>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/orig/orig_waymo_1287_single_view.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/chatsim/waymo-1287-chatsim-move-forward.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/ours/waymo-1287-ours-move-forward.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="slide-text">
+                    <h4>Add a Audi moving foward on another lane.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <table width="100%">
+                    <tr>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/orig/orig_waymo_9385_single_view.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/chatsim/waymo-9385-chatsim-chase.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/ours/waymo-9385-ours-chase.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="slide-text">
+                    <h4>Making a police car chasing behind a tesla roadster in front of us.</h4>
+                  </div>
+                  <br />
+                </li>
+                <li class="glide__slide">
+                  <table width="100%">
+                    <tr>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/orig/orig_waymo_9385_single_view.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/chatsim/waymo-9385-chatsim-towards.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                      <td align="center" valign="top">
+                        <video controls muted loop autoplay>
+                          <source src="src/videos/ours/waymo-9385-ours-towards.mp4" type="video/mp4" />
+                        </video>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="slide-text">
+                    <h4>Add a Benz S driving towards us.</h4>
+                  </div>
+                  <br />
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <span class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                  src="resources/arrow-left-circle-fill.svg" /></span>
+              <span class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                  src="resources/arrow-right-circle-fill.svg" /></span>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <span class="glide__bullet" data-glide-dir="=0"></span>
+              <span class="glide__bullet" data-glide-dir="=1"></span>
+              <span class="glide__bullet" data-glide-dir="=2"></span>
+            </div>
+          </div>
+        </td>
       </div>
     </div>
 
@@ -596,6 +810,10 @@
         <h4>
           Pikaffect
         </h4>
+        <div class="text-justify">
+          We compare our method (right) with the visual effect, Pikaffect, created by <a href='https://pika.art/'>Pika1.5</a> (middle). The original input image for Pika1.5 is shown on the left. 
+          Our method generates more localized and physically accurate visual effects.
+        </div>
         <td align="center" valign="top">
           <div class="glide" id="dynamic-carousel-pikaffect">
             <div class="glide__track" data-glide-el="track">
@@ -660,6 +878,7 @@
             </div>
             <div class="glide__bullets" data-glide-el="controls[nav]">
               <span class="glide__bullet" data-glide-dir="=0"></span>
+              <span class="glide__bullet" data-glide-dir="=1"></span>
             </div>
           </div>
         </td>
@@ -909,7 +1128,7 @@
         If you find our project useful, please consider citing:
         <br />
 
-        <div class="CodeMirror cm-s-default CodeMirror-wrap">
+        <!-- <div class="CodeMirror cm-s-default CodeMirror-wrap">
           <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 38.28px; left: 647px;">
             <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
               style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
@@ -955,7 +1174,7 @@
             <div style="position: absolute; height: 15px; width: 1px; top: 111px;"></div>
             <div class="CodeMirror-gutters" style="display: none; height: 126px;"></div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
