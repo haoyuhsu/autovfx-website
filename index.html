@@ -47,32 +47,47 @@
       font-weight: bold;
       margin-bottom: 10px; /* Add some space between text and video */
     }
+    /* .inst-garden-view-ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .inst-garden-view-ul li {
+      flex: 1 1 45%;
+      margin: 5px;
+      text-align: center;
+    } */
   </style>
 
   <script src="resources/glide.min.js"></script>
   <script>
     window.onload = function () {
-      new Glide("#dynamic-carousel-garden", {
-        type: "carousel",
-        perView: 1.40,
-        focusAt: "center",
-        autoplay: 12000,
-        hoverpause: true
-      }).mount();
-      new Glide("#dynamic-carousel-indoor", {
-        type: "carousel",
-        perView: 1.40,
-        focusAt: "center",
-        autoplay: 10000,
-        hoverpause: true
-      }).mount();
-      new Glide("#dynamic-carousel-outdoor", {
-        type: "carousel",
-        perView: 1.40,
-        focusAt: "center",
-        autoplay: 10000,
-        hoverpause: true
-      }).mount();
+      // new Glide("#dynamic-carousel-garden", {
+      //   type: "carousel",
+      //   perView: 1.40,
+      //   focusAt: "center",
+      //   autoplay: 12000,
+      //   hoverpause: true
+      // }).mount();
+      // new Glide("#dynamic-carousel-indoor", {
+      //   type: "carousel",
+      //   perView: 1.40,
+      //   focusAt: "center",
+      //   autoplay: 10000,
+      //   hoverpause: true
+      // }).mount();
+      // new Glide("#dynamic-carousel-outdoor", {
+      //   type: "carousel",
+      //   perView: 1.40,
+      //   focusAt: "center",
+      //   autoplay: 10000,
+      //   hoverpause: true
+      // }).mount();
       new Glide("#dynamic-carousel-baselines", {
         type: "carousel",
         perView: 1.00,
@@ -260,7 +275,30 @@
         <h4>
           Gardenverse
         </h4>
-        <div class="glide" id="dynamic-carousel-garden">
+        <center>
+          <div class="video-compare-container" id="ours" style="width: 100%">
+            <video class="video" id="inst-garden_video" loop="" playsinline="" autoplay="" muted=""
+              poster="src/loading.gif" src="src/videos/ours_merge/merge_garden_fireball_break_vase.mp4"
+              onplay="resizeAndPlay(this)">
+            </video>
+            <canvas class="videoMerge" id="inst-garden_videoMerge"></canvas>
+          </div>
+          <h4 id="inst-garden-description">
+            Throw a basketball with fire towards vase with flowers and break the vase with collision.
+          </h4>
+          <ul class="nav nav-pills nav-justified" id="inst-garden-view-ul" style="width: 100%">
+            <li role="presentation" class="active"><a href="javascript: void(0);" onclick="ChangeInstGarden(0);">Fireball breaks vase</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(1);">Melt vase</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(2);">Fracture vase</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(3);">Animated bird</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(4);">Drop basketballs</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(5);">Animated pikachu</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(6);">Computer emits smoke</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(7);">Make vase mirror-like</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstGarden(8);">Drop vase</a></li>
+          </ul>
+        </center>
+        <!-- <div class="glide" id="dynamic-carousel-garden">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide">
@@ -373,7 +411,7 @@
             <span class="glide__bullet" data-glide-dir="=8"></span>
             <span class="glide__bullet" data-glide-dir="=9"></span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -382,7 +420,25 @@
         <h4>
           Indoor scenes
         </h4>
-        <div class="glide" id="dynamic-carousel-indoor">
+        <center>
+          <div class="video-compare-container" id="ours" style="width: 100%">
+            <video class="video" id="inst-indoor_video" loop="" playsinline="" autoplay="" muted=""
+              poster="src/loading.gif" src="src/videos/ours_merge/merge_office_animated_dragon.mp4"
+              onplay="resizeAndPlay(this)">
+            </video>
+            <canvas class="videoMerge" id="inst-indoor_videoMerge"></canvas>
+          </div>
+          <h4 id="inst-indoor-description">
+            Insert an animated dragon moving above and around the floor.
+          </h4>
+          <ul class="nav nav-pills nav-justified" id="inst-indoor-view-ul" style="width: 100%">
+            <li role="presentation" class="active"><a href="javascript: void(0);" onclick="ChangeInstIndoor(0);">Animated dragon</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstIndoor(1);">Ironman emits smoke</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstIndoor(2);">Setup campfire</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstIndoor(3);">Drop textured barrels</a></li>
+          </ul>
+        </center>
+        <!-- <div class="glide" id="dynamic-carousel-indoor">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide">
@@ -465,7 +521,7 @@
             <span class="glide__bullet" data-glide-dir="=5"></span>
             <span class="glide__bullet" data-glide-dir="=6"></span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -474,7 +530,26 @@
         <h4>
           Outdoor & autonomous driving scenes
         </h4>
-        <div class="glide" id="dynamic-carousel-outdoor">
+        <center>
+          <div class="video-compare-container" id="ours" style="width: 100%">
+            <video class="video" id="inst-outdoor_video" loop="" playsinline="" autoplay="" muted=""
+              poster="src/loading.gif" src="src/videos/ours_merge/merge_waymo_1776_traffic_accident.mp4"
+              onplay="resizeAndPlay(this)">
+            </video>
+            <canvas class="videoMerge" id="inst-outdoor_videoMerge"></canvas>
+          </div>
+          <h4 id="inst-outdoor-description">
+            Insert a physics-enabled Benz G 20 meters in front of us with random 2D rotation. Add a Ferriari moving forward.
+          </h4>
+          <ul class="nav nav-pills nav-justified" id="inst-outdoor-view-ul" style="width: 100%">
+            <li role="presentation" class="active"><a href="javascript: void(0);" onclick="ChangeInstOutdoor(0);">Traffic accident</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstOutdoor(1);">Car locomotion</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstOutdoor(2);">Drop flaming car</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstOutdoor(3);">Fracture human-shaped statue</a></li>
+            <li role="presentation"><a href="javascript: void(0);" onclick="ChangeInstOutdoor(4);">Fracture horse-shaped statue</a></li>
+          </ul>
+        </center>
+        <!-- <div class="glide" id="dynamic-carousel-outdoor">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide">
@@ -577,7 +652,7 @@
             <span class="glide__bullet" data-glide-dir="=7"></span>
             <span class="glide__bullet" data-glide-dir="=8"></span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
