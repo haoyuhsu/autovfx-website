@@ -7,7 +7,8 @@ var currentInstGardenList = [
     "merge_garden_pikachu_animation",
     "merge_garden_smoke_simulation",
     "merge_garden_vase_mirror",
-    "merge_garden_vase_rbsim"
+    "merge_garden_vase_rbsim",
+    "merge_garden_generated_asset"
 ];
 var currentInstGardenDescriptions = [
     "Throw a basketball with fire towards vase with flowers and break the vase with collision.",
@@ -18,7 +19,8 @@ var currentInstGardenDescriptions = [
     "Insert an animated pikachu on the table.",
     "Insert a computer on the table and make it emit smoke.",
     "Make the vase with flowers to be like a mirror.",
-    "Make the vase with flowers 1.5 time bigger, then make it drop onto the table."
+    "Make the vase with flowers 1.5 time bigger, then make it drop onto the table.",
+    "Generate a vintage suitcase and place it on the table."
 ];
 var currentInstGarden = "merge_garden_fireball_break_vase";
 var currentInstGardenId = 0;
